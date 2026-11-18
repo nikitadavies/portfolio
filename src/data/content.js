@@ -1,14 +1,10 @@
-// ─────────────────────────────────────────────────────────────
-//  All portfolio content lives here. Edit this file to update
-//  text, links, metrics and projects — no component changes needed.
-// ─────────────────────────────────────────────────────────────
 
 export const profile = {
   name: "Nikita Davies",
   initials: "ND",
   role: "Full-Stack Software Engineer",
   location: "Toronto, Canada",
-  email: "ndavies812@gmail.com",
+  email: "nikitadavies98@gmail.com",
   phone: "+1 (782) 882 6720",
   linkedin: "https://www.linkedin.com/in/nikita-davies",
   github: "https://github.com/nikitadavies",
@@ -35,7 +31,7 @@ export const hero = {
 // The five differentiators — rendered as animated counters under the hero.
 export const stats = [
   { value: 4, suffix: "+", label: "Years Experience", sub: "Web · Mobile · Cloud", icon: "Briefcase" },
-  { value: 4.25, decimals: 2, suffix: "/4.3", smallSuffix: true, label: "Master's in Computer Science", sub: "Dalhousie University · CGPA", icon: "GraduationCap" },
+  { value: 4.25, decimals: 2, suffix: "/4.3 GPA", smallSuffix: true, label: "Master's in Computer Science", sub: "Dalhousie University · Canada", icon: "GraduationCap" },
   { text: "AWS", label: "Certified Solutions Architect", sub: "Associate level", icon: "FaAws" },
   { value: 3, suffix: "M+", label: "Daily Active Users", sub: "B2C marketplace scale", icon: "Users" },
 ];

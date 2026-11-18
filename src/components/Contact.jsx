@@ -49,11 +49,11 @@ function ContactForm() {
       <div className="field-row">
         <label className="field">
           <span>Name</span>
-          <input required value={form.name} onChange={update("name")} placeholder="Jane Recruiter" autoComplete="name" />
+          <input required value={form.name} onChange={update("name")} placeholder="Name" autoComplete="name" />
         </label>
         <label className="field">
           <span>Email</span>
-          <input required type="email" value={form.email} onChange={update("email")} placeholder="jane@company.com" autoComplete="email" />
+          <input required type="email" value={form.email} onChange={update("email")} placeholder="Email" autoComplete="email" />
         </label>
       </div>
       <label className="field">
