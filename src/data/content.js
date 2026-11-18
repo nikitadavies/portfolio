@@ -14,8 +14,7 @@ export const profile = {
   github: "https://github.com/nikitadavies",
   resume: "/Nikita_Davies_Resume.pdf",
   photo: "/profile.jpg",
-  // 👉 Replace with your deployed URL — the ID card QR code points here.
-  siteUrl: "https://nikitadavies.dev",
+  siteUrl: "https://nikitadavies.com",
   workAuth: "Eligible to work in Canada — valid open work permit",
   status: "Open to Full-Stack, Backend & Cloud roles",
 };
