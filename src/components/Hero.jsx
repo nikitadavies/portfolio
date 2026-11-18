@@ -6,12 +6,15 @@ import Icon from "./Icon";
 import IdCard from "./IdCard";
 
 function Stat({ s, start, i }) {
-  const n = useCountUp(s.value, start, 1400 + i * 150);
+  const n = useCountUp(s.value ?? 0, start, 1400 + i * 150, s.decimals ?? 0);
+  const display = s.text ?? n.toFixed(s.decimals ?? 0);
   return (
     <div className="stat">
       <span className="stat__icon"><Icon name={s.icon} size={26} /></span>
       <div>
-        <div className="stat__value">{n}{s.suffix}</div>
+        <div className="stat__value">
+          {display}{s.smallSuffix ? <span className="stat__suffix">{s.suffix}</span> : s.suffix}
+        </div>
         <div className="stat__label">{s.label}</div>
         <div className="stat__sub">{s.sub}</div>
       </div>

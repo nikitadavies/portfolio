@@ -35,10 +35,10 @@ export const hero = {
 
 // The five differentiators — rendered as animated counters under the hero.
 export const stats = [
-  { value: 5, suffix: "+", label: "Years Experience", sub: "Web · Mobile · Cloud", icon: "Briefcase" },
+  { value: 4, suffix: "+", label: "Years Experience", sub: "Web · Mobile · Cloud", icon: "Briefcase" },
+  { value: 4.25, decimals: 2, suffix: "/4.3", smallSuffix: true, label: "Master's in Computer Science", sub: "Dalhousie University · CGPA", icon: "GraduationCap" },
+  { text: "AWS", label: "Certified Solutions Architect", sub: "Associate level", icon: "FaAws" },
   { value: 3, suffix: "M+", label: "Daily Active Users", sub: "B2C marketplace scale", icon: "Users" },
-  { value: 30, suffix: "%", label: "Faster Load Times", sub: "Webpack & RN optimization", icon: "Zap" },
-  { value: 20, suffix: "%", label: "Accuracy Improvement", sub: "Custom React Native SDK", icon: "Target" },
 ];
 
 export const about = {
@@ -186,6 +186,33 @@ export const experience = [
       "Designed a reusable React/TypeScript component library and design system adopted across multiple products.",
     ],
     tech: ["React", "React Native", "TypeScript", "Node.js", "Spring Boot", "GraphQL", "Webpack", "Redux"],
+  },
+  {
+    role: "Machine Learning Intern",
+    company: "Tech Mahindra",
+    location: "Hyderabad, India",
+    period: "Jun 2019 – Aug 2019",
+    headline: "Where it started — building with data and the web side by side.",
+    highlights: [
+      "Built a sentiment-analysis model in Python that used text mining to classify customer feedback as positive or negative.",
+      "Analysed a real-world feedback dataset end to end, turning unstructured text into clear positive / negative insights.",
+      "Built web services for an event-management application with Spring Boot, Node.js, Express and MongoDB.",
+      "Developed the React + Bootstrap frontend that consumed those services — a full-stack product from database to UI.",
+    ],
+    tech: ["Python", "Text Mining", "NLP", "Spring Boot", "Node.js", "Express", "MongoDB", "React"],
+  },
+  {
+    role: "Data Science Intern",
+    company: "Gramener Technology Solutions",
+    location: "Hyderabad, India",
+    period: "Jul 2018 – Aug 2018",
+    headline: "Learning to turn data into stories that drive decisions.",
+    highlights: [
+      "Worked on data science and analytics, learning how data solutions are customised for different industries.",
+      "Practised analytical storytelling — presenting data-driven insights in a clear, visual way that business teams can act on.",
+      "Contributed to a web application with a Spring Boot backend and a React + Bootstrap frontend.",
+    ],
+    tech: ["Data Analytics", "Data Visualisation", "Spring Boot", "React", "Bootstrap"],
   },
 ];
 

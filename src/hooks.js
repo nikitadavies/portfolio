@@ -21,23 +21,23 @@ export function useInView(options = { threshold: 0.15 }) {
 }
 
 /** Animates a number from 0 → target once `start` is true. */
-export function useCountUp(target, start, duration = 1600) {
+export function useCountUp(target, start, duration = 1600, decimals = 0) {
   const [value, setValue] = useState(0);
   useEffect(() => {
     if (!start) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return setValue(target);
+    if (reduce) return setValue(Number((target * eased).toFixed(decimals)));
     let raf;
     const t0 = performance.now();
     const tick = (now) => {
       const p = Math.min((now - t0) / duration, 1);
       const eased = 1 - Math.pow(1 - p, 3);
-      setValue(Math.round(target * eased));
+      setValue(Number((target * eased).toFixed(decimals)));
       if (p < 1) raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [target, start, duration]);
+  }, [target, start, duration, decimals]);
   return value;
 }
 
